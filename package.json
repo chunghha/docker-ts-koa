@@ -1,0 +1,20 @@
+{
+  "name": "docker-ts-koa",
+  "version": "0.1.0",
+  "main": "build/server.js",
+  "scripts": {
+    "start": "node build/server.js",
+    "lint": "tslint src/**/*.ts{,x}",
+    "build": "tsc",
+    "build:watch": "tsc -w"
+  },
+  "dependencies": {
+    "@types/koa": "^2.0.39",
+    "koa": "^2.2.0",
+    "source-map-support": "^0.4.15"
+  },
+  "devDependencies": {
+    "tslint": "^5.1.0",
+    "typescript": "^2.3.2"
+  }
+}
