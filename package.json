@@ -9,10 +9,12 @@
     "build:watch": "tsc -w"
   },
   "dependencies": {
-    "koa": "^2.2.0"
+    "koa": "^2.2.0",
+    "koa-logger": "^2.0.1"
   },
   "devDependencies": {
     "@types/koa": "^2.0.39",
+    "@types/koa-logger": "^2.0.2",
     "tslint": "^5.1.0",
     "typescript": "^2.3.2"
   }
