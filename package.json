@@ -9,11 +9,10 @@
     "build:watch": "tsc -w"
   },
   "dependencies": {
-    "@types/koa": "^2.0.39",
-    "koa": "^2.2.0",
-    "source-map-support": "^0.4.15"
+    "koa": "^2.2.0"
   },
   "devDependencies": {
+    "@types/koa": "^2.0.39",
     "tslint": "^5.1.0",
     "typescript": "^2.3.2"
   }
