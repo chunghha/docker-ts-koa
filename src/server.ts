@@ -1,20 +1,21 @@
 import * as Koa from 'koa'
 import * as logger from 'koa-logger'
-import * as KR from 'koa-route'
+import * as route from 'koa-route'
+
+import * as api from './apis/api'
 
 const app = new Koa()
-const res = {
-  api: (ctx) => {
-    ctx.body = 'Hello, api'
-  },
 
+const res = {
   root: (ctx) => {
     ctx.body = 'Hello, World'
   },
 }
 
 app.use(logger())
-app.use(KR.get('/', res.root))
-app.use(KR.get('/api', res.api))
+
+app.use(route.get('/', res.root))
+app.use(route.get('/api', api.res.hello))
+app.use(route.get('/echo/:echo', api.res.echo))
 
 app.listen(8080)
