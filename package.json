@@ -6,7 +6,14 @@
     "start": "node build/server.js",
     "lint": "tslint src/**/*.ts{,x}",
     "build": "tsc",
-    "build:watch": "tsc -w"
+    "build:watch": "tsc -w",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run check"
   },
   "dependencies": {
     "koa": "^2.4.1",
@@ -14,9 +21,10 @@
     "koa-route": "^3.2.0"
   },
   "devDependencies": {
-    "@types/koa": "^2.0.41",
+    "@types/koa": "^2.0.42",
     "@types/koa-logger": "^2.0.3",
+    "gts": "^0.5.1",
     "tslint": "^5.8.0",
-    "typescript": "^2.6.1"
+    "typescript": "^2.6.2"
   }
 }

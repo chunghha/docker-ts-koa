@@ -1,5 +1,5 @@
 export const res = {
   root: (ctx) => {
-    ctx.body = 'Hello, World'
+    ctx.body = 'Hello, World';
   },
-}
+};
