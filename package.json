@@ -16,15 +16,15 @@
     "posttest": "npm run check"
   },
   "dependencies": {
-    "koa": "^2.4.1",
+    "koa": "^2.5.0",
     "koa-logger": "^3.1.0",
     "koa-route": "^3.2.0"
   },
   "devDependencies": {
-    "@types/koa": "^2.0.42",
-    "@types/koa-logger": "^2.0.3",
-    "gts": "^0.5.1",
-    "tslint": "^5.8.0",
-    "typescript": "^2.6.2"
+    "@types/koa": "^2.0.44",
+    "@types/koa-logger": "^3.1.0",
+    "gts": "^0.5.3",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2"
   }
 }
